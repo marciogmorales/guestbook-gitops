@@ -17,9 +17,9 @@ name: Build and Push an Image to ECR
 env:
   AWS_DEFAULT_REGION: us-east-1
   AWS_DEFAULT_OUTPUT: json
-  AWS_ACCOUNT_ID: ${{ secrets.798707654575 }}
-  AWS_ACCESS_KEY_ID: ${{ secrets.AKIA3T5VPT6XR3IU36IO }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.VRDdfT67Ry55QZ4rhSVJo8cGsiNjgc3AgpGgS1/G }}
+  AWS_ACCOUNT_ID: ${{ secrets.accountID }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.AccessKey }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.SecretAccessKey }}
   CONTAINER_IMAGE: guestbook:${{ github.sha }}
 
 jobs:
